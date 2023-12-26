@@ -3,6 +3,12 @@ html {
     font-size: 10px;
     background: url('./background.jpg') bottom center;
     background-size: cover;
+   /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px); */
+    /* filter: blur(5px); 
+    z-index: -1;  */
   }
   
   body,html {
@@ -17,6 +23,9 @@ html {
    align-items: center;
    flex: 1;
     min-height: 100vh;
+    /* z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px; */
   }  
 
 .key {
@@ -29,14 +38,20 @@ html {
     width: 10rem;
     text-align: center;
     color: white;
-    background: rgba(0,0,0,0.4);
-    text-shadow: 0 0 .5rem black;
+    background: rgba(79, 71, 71, 0.7);
+    text-shadow: 0 0 .7rem black;
+    /* z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px; */
+    /* box-shadow: 0 0 10px #9521f3, 0 0 40px #c600ee, 0 0 80px #f704f7; */
   }
 
   .playing {
     transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 1rem #ffc600;
+    border-color: #ffb700;
+    background: rgba(255, 195, 0, 0.7);
+    box-shadow: 0 0 10px #ffd000, 0 0 40px #ffdd00, 0 0 100px #ffea00;
+    /* color:#000000 */
   }
   
   kbd {
