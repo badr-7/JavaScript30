@@ -1,67 +1,60 @@
-
 html {
-    font-size: 10px;
-    background: url('./background.jpg') bottom center;
-    background-size: cover;
-   /* -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px); */
-    /* filter: blur(5px); 
-    z-index: -1;  */
-  }
-  
-  body,html {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
+  font-size: 10px;
+}
+.background {
+  position: absolute;
+  background-image : url("./background.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
 .keys {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   flex: 1;
-    min-height: 100vh;
-    /* z-index: 9999;
-    margin-left: 20px;
-    margin-right: 20px; */
-  }  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  min-height: 100vh;
+}
 
 .key {
-    border: .4rem solid black;
-    border-radius: .5rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
-    transition: all .07s ease;
-    width: 10rem;
-    text-align: center;
-    color: white;
-    background: rgba(79, 71, 71, 0.7);
-    text-shadow: 0 0 .7rem black;
-    /* z-index: 9999;
-    margin-left: 20px;
-    margin-right: 20px; */
-    /* box-shadow: 0 0 10px #9521f3, 0 0 40px #c600ee, 0 0 80px #f704f7; */
-  }
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.08s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(79, 71, 71, 0.7);
+  text-shadow: 0 0 0.7rem black;
+}
 
-  .playing {
-    transform: scale(1.1);
-    border-color: #ffb700;
-    background: rgba(255, 195, 0, 0.7);
-    box-shadow: 0 0 10px #ffd000, 0 0 40px #ffdd00, 0 0 100px #ffea00;
-    /* color:#000000 */
-  }
-  
-  kbd {
-    display: block;
-    font-size: 4rem;
-  }
-  
-  .sound {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    color: #ffc600;
-  }
+.playing {
+  transform: scale(1.2);
+  border-color: #ffb700;
+  background: rgba(255, 195, 0, 0.7);
+  box-shadow: 0 0 10px #ffd000, 0 0 40px #ffdd00, 0 0 100px #ffea00;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
